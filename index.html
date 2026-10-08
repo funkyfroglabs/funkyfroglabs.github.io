@@ -73,6 +73,21 @@
     a {
       color: var(--accent);
     }
+
+    .support {
+      margin-top: 32px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .support h2 {
+      margin: 0 0 8px;
+      font-size: 1.25rem;
+    }
+
+    .support p + p {
+      margin-top: 12px;
+    }
   </style>
 </head>
 <body>
@@ -85,6 +100,13 @@
         <strong>Uncle Drum</strong>
         <span>Privacy Policy</span>
       </a>
+    </section>
+
+    <section class="support" id="support" aria-labelledby="support-heading">
+      <h2 id="support-heading">Uncle Drum Support</h2>
+      <p>Need help with Uncle Drum? Contact us with questions, issues, feedback, or feature requests.</p>
+      <p><a href="mailto:funkyfroglabs@gmail.com">funkyfroglabs@gmail.com</a></p>
+      <p>For technical issues, please include your device model, app version, and a description of what happened.</p>
     </section>
   </main>
 </body>
