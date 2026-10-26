@@ -62,9 +62,9 @@
 <body>
   <main>
     <h1>Privacy Policy</h1>
-    <p class="effective-date"><strong>Last updated:</strong> October 21, 2026</p>
+    <p class="effective-date"><strong>Last updated:</strong> October 26, 2026</p>
 
-    <p>UncleDrum: Groove Lab ("UncleDrum") is developed by <strong>Miguel Rodríguez Morell</strong>, using the developer name <strong>Funky Frog Labs</strong>. Miguel Rodríguez Morell is the controller for the personal data processing he determines in connection with UncleDrum, including handling support enquiries. Google, Apple and other advertising partners also process information as described below; their roles depend on the service and processing involved.</p>
+    <p>UncleDrum: Groove Lab ("UncleDrum") is developed by <strong>Miguel Rodríguez Morell</strong>, using the developer name <strong>Funky Frog Labs</strong>. Miguel Rodríguez Morell is the controller for the personal data processing he determines in connection with UncleDrum, including handling support enquiries and using crash reports to maintain app reliability. Google, Apple and other advertising partners also process information as described below; their roles depend on the service and processing involved.</p>
     <p>Contact: <a href="mailto:funkyfroglabs@gmail.com">funkyfroglabs@gmail.com</a>. This policy covers UncleDrum on Android and iOS and visits to this privacy page.</p>
 
     <h2>1. App Data and Local Storage</h2>
@@ -90,6 +90,12 @@
     <p>On iOS, UncleDrum requests tracking permission through Apple’s App Tracking Transparency (ATT) framework when applicable. If you authorize tracking, AdMob may use the device’s advertising identifier (IDFA) to personalize and measure advertisements by linking app data with data from other companies’ apps and websites, subject to your advertising consent choices.</p>
     <p>If you decline ATT permission, the Google Mobile Ads SDK does not send the IDFA in ad requests. Advertisements may still be shown, and other information described in this policy may still be processed according to applicable consent choices and requirements. You can review or change tracking permission in iOS Settings &gt; Privacy &amp; Security &gt; Tracking. ATT permission and the advertising privacy choices managed through UMP are separate controls; granting one does not override the other.</p>
 
+    <h2>4a. Crash Reporting with Firebase Crashlytics</h2>
+    <p>UncleDrum uses Google Firebase Crashlytics on Android and iOS to identify crashes and non-fatal errors, diagnose their causes and improve app stability. Reports are sent to Google for processing on our behalf and can be viewed by the developer in the Firebase console.</p>
+    <p>Reports include error messages and stack traces, app version and relevant application state, device and operating-system information, and installation or session identifiers used for reliability metrics. Native crash reports may also contain technical crash-dump data. We do not deliberately attach names, email addresses, account identifiers or your pattern library to reports. Error messages may nevertheless contain values involved in an error. We do not use Google Analytics or its user-action breadcrumbs in this implementation, and do not use these crash reports for advertising or cross-app tracking.</p>
+    <p>Crash reporting is enabled by default for all users, including Premium users, and there is no in-app switch to disable it. It is separate from advertising: declining UMP advertising consent or ATT tracking permission does not disable Crashlytics.</p>
+    <p>For details about Google's processing, see <a href="https://firebase.google.com/support/privacy">Firebase Privacy and Security</a> and the <a href="https://firebase.google.com/terms/data-processing-terms">Firebase Data Processing and Security Terms</a>.</p>
+
     <h2>5. Premium Purchases</h2>
     <p>Premium is a non-consumable in-app purchase. Google Play or Apple's App Store handles payment, purchase records, refunds and restoration. UncleDrum receives transaction and entitlement information to unlock or restore Premium and caches the entitlement locally. The developer does not receive your full payment card information or send receipts to a developer-operated verification server.</p>
     <p>See <a href="https://www.apple.com/legal/privacy/data/en/app-store/">App Store &amp; Privacy</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
@@ -100,15 +106,17 @@
     <h2>7. Purposes and Legal Bases</h2>
     <p>Where the GDPR applies, processing needed to provide requested features, administer Premium and address purchase-related enquiries is based on performance of a contract or steps requested before entering a contract (Article 6(1)(b)). General support correspondence is based on the legitimate interest in answering enquiries and resolving issues (Article 6(1)(f)). Processing needed to meet applicable legal obligations is based on Article 6(1)(c).</p>
     <p>Consent is the basis for advertising processing that requires consent (Article 6(1)(a)), including advertising personalization where applicable. For other processing, the relevant provider or partner may rely on another permitted basis, such as legitimate interests for security or fraud prevention. The consent interface and providers' notices identify the purposes and bases they present; consent refusal must not be interpreted as consent to another purpose.</p>
+    <p>Crash reporting is based on our legitimate interest in identifying technical faults and maintaining a reliable app (Article 6(1)(f)). We use technical reports for this purpose rather than advertising or profiling. Where applicable, you may object to this processing by contacting us as described below.</p>
     <p>Support information is not used to send promotional emails. Providing it is voluntary, although we may be unable to resolve an enquiry without sufficient details.</p>
 
     <h2>8. Retention and Deletion</h2>
     <p>Local data remains until you remove it or clear the app's storage. Uninstalling generally removes app data, but device or cloud backups, exported files and copies shared with others may remain under the relevant platform's controls. Purchase records can remain in your store account so Premium can be restored.</p>
     <p>Support emails and attachments are kept only as long as needed to resolve your enquiry and any necessary follow-up, or to meet legal obligations or handle claims. You can request deletion by emailing funkyfroglabs@gmail.com, subject to those requirements.</p>
+    <p>According to Firebase, Crashlytics retains crash stack traces, extracted native crash-dump data and associated identifiers for 90 days before starting removal from live and backup systems. This does not mean deletion is completed on day 90. You can contact us about access, deletion or objection requests; identifying a particular report may be limited because we do not attach your name or email address. Other Firebase technical data is handled under the linked Firebase notices.</p>
     <p>Google, Apple and advertising partners determine retention for their processing under their notices and obligations. UncleDrum does not promise automatic deletion of their records within a particular period. You can contact us about a privacy request, and use the providers' privacy controls for processing they control.</p>
 
     <h2>9. Providers and International Transfers</h2>
-    <p>Recipients may include Google for advertising, consent management and email hosting; Apple or Google for store purchases; advertising and measurement partners involved in AdMob; and a service you choose when sharing a pattern.</p>
+    <p>Recipients may include Google for advertising, consent management, Firebase crash reporting and email hosting; Apple or Google for store purchases; advertising and measurement partners involved in AdMob; and a service you choose when sharing a pattern.</p>
     <p>These providers may process information outside your country, including outside the EEA. Where required, transfers must have a lawful safeguard. Google describes its use of adequacy frameworks and standard contractual clauses in its <a href="https://policies.google.com/privacy/frameworks">data transfer information</a>. Other providers describe applicable safeguards in their privacy notices. Contact us for information about transfers relating to processing we control.</p>
     <p>This policy page is hosted on GitHub Pages. GitHub may process visitors' IP addresses and technical request information to provide and secure the website. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's Privacy Statement</a>.</p>
 
