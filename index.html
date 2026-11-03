@@ -60,6 +60,33 @@
       border-color: var(--accent);
     }
 
+    .store-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .store-link {
+      display: inline-block;
+      padding: 14px 20px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .store-link:hover {
+      background: #642d2d;
+    }
+
+    .store-link:focus-visible {
+      outline: 3px solid var(--text);
+      outline-offset: 4px;
+    }
+
     .app-link strong {
       display: block;
       margin-bottom: 4px;
@@ -96,16 +123,21 @@
     <p>Independent apps and experiments.</p>
 
     <section class="apps" aria-label="Apps">
-      <a class="app-link" href="/privacy-policy/">
-        <strong>Uncle Drum</strong>
-        <span>Privacy Policy</span>
-      </a>
+      <div class="app-link">
+        <strong>UncleDrum: The Drum Machine</strong>
+        <p>Create, play, and share drum patterns. Download UncleDrum for your device.</p>
+        <div class="store-links" aria-label="Download UncleDrum">
+          <a class="store-link" href="https://apps.apple.com/app/id6802841032">App Store · iPhone &amp; iPad</a>
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.funkyfrog.uncledrum">Google Play · Android</a>
+        </div>
+      </div>
     </section>
 
     <section class="support" id="support" aria-labelledby="support-heading">
       <h2 id="support-heading">Uncle Drum Support</h2>
       <p>Need help with Uncle Drum? Contact us with questions, issues, feedback, or feature requests.</p>
       <p><a href="mailto:funkyfroglabs@gmail.com">funkyfroglabs@gmail.com</a></p>
+      <p><a href="/privacy-policy/">Privacy Policy</a></p>
       <p>For technical issues, please include your device model, app version, and a description of what happened.</p>
     </section>
   </main>
