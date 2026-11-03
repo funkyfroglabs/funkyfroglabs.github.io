@@ -63,23 +63,28 @@
     .store-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      align-items: center;
+      gap: 16px;
       margin-top: 20px;
     }
 
     .store-link {
-      display: inline-block;
-      padding: 14px 20px;
-      border-radius: 8px;
-      background: var(--accent);
-      color: #fff;
-      font-weight: 600;
-      text-align: center;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 72px;
       text-decoration: none;
     }
 
-    .store-link:hover {
-      background: #642d2d;
+    .store-link img {
+      display: block;
+      width: auto;
+      height: 48px;
+    }
+
+    .store-link.google-play img {
+      /* Google's official artwork includes its own clear space. */
+      height: 72px;
     }
 
     .store-link:focus-visible {
@@ -127,8 +132,8 @@
         <strong>UncleDrum: The Drum Machine</strong>
         <p>Create, play, and share drum patterns. Download UncleDrum for your device.</p>
         <div class="store-links" aria-label="Download UncleDrum">
-          <a class="store-link" href="https://apps.apple.com/app/id6802841032">App Store · iPhone &amp; iPad</a>
-          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.funkyfrog.uncledrum">Google Play · Android</a>
+          <a class="store-link" href="https://apps.apple.com/app/id6802841032"><img src="/assets/badges/app-store.svg" alt="Download on the App Store for iPhone and iPad" width="144" height="48"></a>
+          <a class="store-link google-play" href="https://play.google.com/store/apps/details?id=com.funkyfrog.uncledrum"><img src="/assets/badges/google-play.png" alt="Get it on Google Play for Android" width="186" height="72"></a>
         </div>
       </div>
     </section>
